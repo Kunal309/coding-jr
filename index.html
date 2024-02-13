@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Learning Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Course Name</h1>
+            <!-- Language Selection -->
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </header>
+        <nav>
+            <!-- Navigation Menu -->
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#section1">Section 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section2">Section 2</a></li>
+                <!-- Add more sections and subsections as needed -->
+            </ul>
+        </nav>
+        <main>
+            <section id="section1">
+                <h2>Section 1</h2>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 25%;">25% Complete</div>
+                </div>
+                <h3>Subsection 1.1</h3>
+                <!-- Video Player -->
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <section id="section2">
+                <h2>Section 2</h2>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 50%;">50% Complete</div>
+                </div>
+                <h3>Subsection 2.1</h3>
+                <!-- Audio Player -->
+                <audio controls>
+                    <source src="sachin.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </section>
+            <!-- Add more sections and subsections as needed -->
+        </main>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript for language selection
+        const languageSelect = document.getElementById('language-select');
+        languageSelect.addEventListener('change', function () {
+            // Code to change interface language based on selection
+            console.log('Language changed to: ' + this.value);
+        });
+    </script>
+</body>
+
+</html>
